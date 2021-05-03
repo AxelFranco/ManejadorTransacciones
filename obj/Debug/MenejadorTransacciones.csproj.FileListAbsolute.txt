@@ -1,0 +1,17 @@
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\MenejadorTransacciones.exe.config
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\MenejadorTransacciones.exe
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\MenejadorTransacciones.pdb
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.csprojAssemblyReference.cache
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.FormTransacciones.resources
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.Properties.Resources.resources
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.csproj.GenerateResource.cache
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.exe
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.pdb
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\EntityFramework.dll
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\EntityFramework.xml
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.csproj.CopyComplete
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.LoginForm.resources
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.Calculadora.resources
+C:\Users\Axel\Documents\Learning C#\AppAxel\MenejadorTransacciones\obj\Debug\MenejadorTransacciones.CalculadoraML.resources

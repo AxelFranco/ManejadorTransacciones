@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NegociosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ARTICULOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Concepto" Type="varchar" MaxLength="40" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="Tipo de Movimiento" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="MOVIMIENTOS">
+    <Key>
+      <PropertyRef Name="N de movimiento" />
+    </Key>
+    <Property Name="N de movimiento" Type="int" Nullable="false" />
+    <Property Name="Precio Unitario" Type="float" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="ID Articulo" Type="int" />
+    <Property Name="ID Usuario" Type="int" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="15" />
+    <Property Name="Password" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <Association Name="fk_cMovArt">
+    <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="0..1" />
+    <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULOS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MOVIMIENTOS">
+        <PropertyRef Name="ID Articulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cMovUse">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="MOVIMIENTOS" Type="Self.MOVIMIENTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MOVIMIENTOS">
+        <PropertyRef Name="ID Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NegociosModelStoreContainer">
+    <EntitySet Name="ARTICULOS" EntityType="Self.ARTICULOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MOVIMIENTOS" EntityType="Self.MOVIMIENTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_cMovArt" Association="Self.fk_cMovArt">
+      <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+      <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cMovUse" Association="Self.fk_cMovUse">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="MOVIMIENTOS" EntitySet="MOVIMIENTOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

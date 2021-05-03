@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NegociosModelStoreContainer" CdmEntityContainer="MovPorUsuariosEntities">
+    <EntitySetMapping Name="ARTICULOS">
+      <EntityTypeMapping TypeName="NegociosModel.ARTICULOS">
+        <MappingFragment StoreEntitySet="ARTICULOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Concepto" ColumnName="Concepto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo_de_Movimiento" ColumnName="Tipo de Movimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIMIENTOS">
+      <EntityTypeMapping TypeName="NegociosModel.MOVIMIENTOS">
+        <MappingFragment StoreEntitySet="MOVIMIENTOS">
+          <ScalarProperty Name="N_de_movimiento" ColumnName="N de movimiento" />
+          <ScalarProperty Name="Precio_Unitario" ColumnName="Precio Unitario" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID Articulo" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOS">
+      <EntityTypeMapping TypeName="NegociosModel.USUARIOS">
+        <MappingFragment StoreEntitySet="USUARIOS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
